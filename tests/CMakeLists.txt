@@ -6,7 +6,9 @@ endif()
 
 add_executable(libconfig_tests
     tests.c
-)
+    )
+  
+target_include_directories(libconfig_tests PRIVATE ${CMAKE_SOURCE_DIR}/lib)
 
 target_link_libraries(libconfig_tests
     ${libname}

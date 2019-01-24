@@ -1,3 +1,5 @@
+include(CheckSymbolExists)
+
 set(libinc
     libconfig.h)
 
